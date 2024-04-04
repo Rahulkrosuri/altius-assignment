@@ -12,6 +12,7 @@ export const InvoiceList = () => {
     })
     return (
         <div>
+            <SideBar />
             <Link to={'/addInv'}>Add + </Link>
             <table>
                 <tbody>

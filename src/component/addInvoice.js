@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import { addToInvoices } from "../slice/slice";
 import {useNavigate} from 'react-router-dom'
+import { SideBar } from "./sidebar";
 
 export const AddInvoice = () => {
     const [invN, setinvN] = useState('')
@@ -58,6 +59,7 @@ export const AddInvoice = () => {
     }
     return (
         <div>
+            <SideBar />
             <input type="text" value = {invN} onChange={(e) => (onValueChange1(e))} placeholder="Enter Invoice Number"></input>
             <input type="text" placeholder="Enter customer Name" onChange={(e) => (onValueChange2(e))}></input>
             <input type="text" placeholder="Billing Address" onChange={(e) => (onValueChange3(e))}></input>

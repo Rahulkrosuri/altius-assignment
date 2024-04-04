@@ -8,7 +8,6 @@ import { AddInvoice } from './component/addInvoice';
 function App() {
   return (
     <div className="App">
-      <SideBar />
       <Router>
         <Routes>
         <Route path="/" element={<SideBar />} />
