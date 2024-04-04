@@ -37,3 +37,11 @@
     transform: translateY(0px);
   }
 }
+
+.sidebar {
+  text-align: left;
+}
+
+.table {
+  padding-left: 20px;
+}
